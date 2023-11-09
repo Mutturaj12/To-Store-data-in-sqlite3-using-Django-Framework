@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/index.css">
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+        <label class="l1" for="sid">Student Id</label>
+        <input type="number" name="sid" id="sid" maxlength="5" minlength="5" pattern="[0-9]{5}"><br>
+        <label class="l1" for="name">name</label>
+        <input type="text" name="name" id="name"><br>
+        <label class="l1" for="mobile">Mobile Number</label>
+        <input type="number" name="mobile" id="mobile"> 
+        <label class="l1" for="email">Email</label>
+        <input type="email" id="email" name="email">
+        <label class="l1" for="password">Password</label>
+        <input type="password" id="password" name="password">
+        <input type="submit">
+    </form>
+</body>
+</html>
